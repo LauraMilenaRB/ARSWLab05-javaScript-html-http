@@ -1,0 +1,105 @@
+table {
+    border-collapse: collapse;
+    width: 85%;
+}
+
+th, td ,tfoot{
+    text-align: center;
+    padding: 8px;
+}
+
+canvas {
+    border:3px solid #000000;
+    position: relative;
+}
+.navbar-brand  {
+    text-decoration: white;
+    font-size: x-large;
+    text-align: center;
+    
+}
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #000000;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+ /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}

@@ -1,0 +1,2 @@
+Una condicion de carrera es cuando intentan consultar y agregar un nuevo blueprint se sincroniza a la hora de agregar para 
+que la informacion sea consistente a la hora de consultar.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="js/apimock.js"></script>
+        <script src="js/apiclient.js"></script>
+        <script src="js/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+       
+    </head>
+    <body onload="app.init()">
+        <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+            <a class="navbar-brand" href="#">Blueprints</a>
+        </nav>
+        <form id="nameauthor" >
+            <div style="float: left;width: 50%" >
+                <label style="left: 5%;position: relative">Author:<input  type="text" id="author" value="">
+                    <button type="button" id="getBlueprintauthor" >Get blueprints</button>
+                </label>
+                <table id="Tablablueprints"  border="1">
+                    <thead>
+                        <tr>
+                            <th>Blueprints</th>
+                            <th>#Puntos</th>
+                            <th>Seleccion</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" id="PuntosT">total user points: 0 </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div style="float: right;width: 50%; height: 100%" >
+                <button type="button" id="newBlueprint" >Create new blueprint</button>
+                <label id="divcanvas"></label></p><label id="newcanvas"></label>
+                <canvas id="myCanvas" height="500" width="900"> </canvas>
+                <button type="button" id="saveUpdate" >Save/Update</button>
+                <button type="button" id="deleteBlueprint" >Delete</button>
+                
+            </div>
+        </form>
+        <div class="mastfoot">
+            <div class="inner">
+              <p>Cov </p>
+            </div>
+         </div>
+    </body>
+    
+</html>
